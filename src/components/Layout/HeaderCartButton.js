@@ -17,6 +17,8 @@ const HeaderCartButton = props=>{
 
     const {items} = cartCtx;
 
+
+
     useEffect(()=>{
         if(items.length===0){
             return;
@@ -41,7 +43,7 @@ const HeaderCartButton = props=>{
         <span>
             Your Cart
         </span>
-        <span className={classes.badge}>{numberOfCartItems}</span>
+        {numberOfCartItems !== 0 && <span className={classes.badge}>{numberOfCartItems}</span>}
     </button>);
 }
 

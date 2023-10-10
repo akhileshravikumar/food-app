@@ -1,7 +1,28 @@
 import React from "react";
 import Card from "../UI/Card";
+// import axios from 'axios'
 import MealItem from "./MealItem/MealItem";
 import classes from './AvailableMeals.module.css'
+
+// const options = {
+//   method: 'GET',  
+//   url: 'https://foodiefetch.p.rapidapi.com/swiggy',
+//   params: {
+//     query: 'grandamas cafe pune'
+//   },
+//   headers: {
+//     'X-RapidAPI-Key': '55dbd089b7msh804effbbdca4777p19b20ejsn2a2738669a46',
+//     'X-RapidAPI-Host': 'foodiefetch.p.rapidapi.com'
+//   }
+// };
+
+// try {
+// 	const response = await axios.request(options);
+// 	console.log(response.data);
+// } catch (error) {
+// 	console.error(error);
+// }
+
 const DUMMY_MEALS = [
     {
       id: 'm1',
